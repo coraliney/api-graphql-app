@@ -1,0 +1,17 @@
+type Query {
+  getAllBooks: [book]
+  getAllCDs: [cd]
+}
+
+type book {
+  title: String!
+  year: Int!
+}
+
+type cd {
+  title: String!
+}
+
+type Mutation {
+  createNewBook(title: String!, year: Int!): book
+}
